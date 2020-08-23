@@ -1,0 +1,32 @@
+body {
+	background-color: black;
+}
+
+div#container{
+	position: absolute;
+	height: 99%;
+	width: 99%
+}
+
+div#container img {
+	height: 100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+div#texto {
+	position: fixed;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: larger;
+    pointer-events: none;
+}
+
+div#texto p {
+	text-align: center;
+	color: white;
+	margin: 2% 35%;
+}
