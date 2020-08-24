@@ -30,3 +30,20 @@ div#texto p {
 	color: white;
 	margin: 2% 35%;
 }
+
+a#sobre {
+	font-size: small;
+	top: 0;
+	right: 0;
+	color: white;
+	text-decoration: none;
+    margin: 1em;
+    cursor: pointer;
+    position: fixed;
+}
+
+a#sobre:hover {
+	color: grey;
+	font-style: italic;
+}
+

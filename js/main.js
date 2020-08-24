@@ -33,15 +33,23 @@ $(document).ready(function() {
 	var texto = "";
 	$('area').click(function(e){
 		var idMensaje = $(e.target).attr('mensaje');
-		console.log("ultimo " + ultimoMensaje);
-		console.log("nuevo " + parseInt(idMensaje.replace("mensaje","")));
-		if (ultimoMensaje + 1 == parseInt(idMensaje.replace("mensaje",""))) {
-			texto = texto + "</br></br>" + textos[idMensaje];
-		} else {
+		var mensajeActual = parseInt(idMensaje.replace("mensaje",""));
+
+		if (ultimoMensaje == mensajeActual) {
+			return;
+		} else if(ultimoMensaje == 0) {
 			texto = textos[idMensaje];
+		} else {
+			texto = textos["mensaje" + ultimoMensaje] + "</br></br>" + textos[idMensaje];
 		}
 		
-		ultimoMensaje = parseInt(idMensaje.replace("mensaje",""));
+		ultimoMensaje = mensajeActual;
+		$("#texto").find('p').html(texto);
+	});
+
+	$('#sobre').click(function(e){
+		ultimoMensaje = 0;
+		texto = "<b>Los Barcos</b></br>Foto: Puertito de Buceo de Jimmy Baikovicius</br>https://www.flickr.com/photos/jikatu/35492359205</br></br>CC BY-SA 4.0"
 		$("#texto").find('p').html(texto);
 	});
 });
