@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 	$('#sobre').click(function(e){
 		ultimoMensaje = 0;
-		texto = "<b>Los Barcos</b></br>Foto: Puertito de Buceo de Jimmy Baikovicius</br>https://www.flickr.com/photos/jikatu/35492359205</br></br>CC BY-SA 4.0"
+		texto = "<b>Los Barcos</b></br></br>Foto: Puertito de Buceo de Jimmy Baikovicius</br>https://www.flickr.com/photos/jikatu/35492359205</br></br>CC BY-SA 4.0"
 		$("#texto").find('p').html(texto);
 	});
 });
