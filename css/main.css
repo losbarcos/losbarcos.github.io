@@ -12,7 +12,9 @@ div#container img {
 	height: 100%;
 	display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+  	user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome, Edge, Opera and Firefox */
 }
 
 div#texto {
@@ -47,3 +49,6 @@ a#sobre:hover {
 	font-style: italic;
 }
 
+audio {
+	display: none;
+}
